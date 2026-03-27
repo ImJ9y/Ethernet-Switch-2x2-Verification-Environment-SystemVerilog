@@ -20,6 +20,23 @@ Generator → Driver → DUT → Monitor → Checker (Scoreboard)
   - Compares expected vs actual packets
   - Reports PASS / FAIL
 
+
+{signal: [
+    ['PortA',
+     {name: 'clk', wave: 'p.....|...', period:1},
+    {name: 'inDataA', wave: 'x.345..2', data: ['DA', 'SA', 'Data', 'CRC']},
+    {name: 'sopA', wave: '0.10......'},
+    {name: 'eopA', wave: '0.0.....10'}
+    ],
+    ['PortB',
+    {name: 'clk', wave: 'p.....|...', period:1},
+    {name: 'inDataB', wave: 'x.345..2', data: ['DA', 'SA', 'Data', 'CRC']},
+    {name: 'sopB', wave: '0.10......'},
+    {name: 'eopB', wave: '0.0.....10'}
+    ],
+ ]
+}
+<img width="535" height="256" alt="image" src="https://github.com/user-attachments/assets/b3bf14b5-b64e-4661-bd79-0cb8c27b40a2" />
 ---
 
 ## Packet Structure
